@@ -42,7 +42,7 @@ const
     ptEXECCMD* = 2
     ptAUTH* = 3
 
-type RCONConnection = object
+type RCONConnection* = object
     host: string
     port: int
     password: string
@@ -108,3 +108,4 @@ proc newRCONConnection*(host: string = "127.0.0.1",
     result.sock.connect(host, Port(port))
     if not result.auth():
         raise newException(AuthError, "Wrong Password")
+
