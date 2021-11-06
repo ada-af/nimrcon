@@ -1,5 +1,5 @@
 # Package
-version = "0.0.1"
+version = "0.1.0"
 author = "Ilya Tretyakov"
 description = "Simple RCON client"
 license = "MIT"

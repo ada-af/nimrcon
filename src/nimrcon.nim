@@ -42,7 +42,7 @@ const
     ptEXECCMD* = 2
     ptAUTH* = 3
 
-type RCONConnection = object
+type RCONConnection* = object
     host: string
     port: int
     password: string
